@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+window.onload = function() {
+	var email = document.getElementById('email');
+	email.addEventListener('blur',changeValue,false); //event bubbling because event capturing is set to false
+};
+	function changeValue(e) {
+		console.log(this);
+		var caller = e.target ||  e.srcElement;//srcElement is used for IE
+		console.log(caller);
+		e.target.value = "Hello";
+		this.value = "Cool";
+	};
+</script>
+
+</head>
+<body>
+	<a href="http://www.yahoo.com" onmouseover="window.alert('Sorry,I\'m not in the mood for you to leave yet!');">Yahoo</a>
+	<br />
+
+	<form>
+		<label>Phone Number</label>
+		<input type="text" onfocus="window.alert('Format is xxx-xxxx.')"/>
+
+		<label>Viewer's Name</label>
+		<input type="text" onblur="window.alert('Thanks, if that is your name!');"/>
+
+		<label>Email address</label>
+		<input id="email" type="text"/>
+
+
+		<input type="submit" onclick="window.alert('Hey! I\'m just a button. Leave me alone!'); return false;" />
+
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body onunload="window.alert('Be sure to come back, OK?');">
+
+<img src="myimage.jpg" alt="my picture" onabort="window.alert('Why don\'t you want to see my picture?');">
+
+
+<!-- onblur -->
+<form>
+Give this box focus: <br />
+<input type="text" onblur="window.alert('Hey! Come back!');" /><br />
+then give this box focus to blur the first one:<br />
+<input type="text" />
+</form>
+
+
+<!-- onchange -->
+<form>
+	Are you cool?<br />
+	<select onchange="window.alert('Why did you change that?');">
+		<option selected="selected"> Yes </option>
+		<option>No</option>
+		<option>Undecided</option>
+	</select>
+</form>
+
+
+<!-- onclick -->
+<form>
+	<input type="button" value="Do not Click Here" onclick="window.alert('I told you not to click me!');">
+</form>
+
+
+<!-- onclick for links -->
+
+<a href="http://www.google.com" onclick="window.alert('Hey! You clicked me!'); return false;"> Don't click Me </a>
+<a href="javascript:window.alert('Hi');">Click</a>
+
+<form>
+	Enter Your Name:
+	<input type="text" onfocus="window.alert('Don\'t forget to capitalize!');" />
+</form>
+
+<!-- onmouseover -->
+<a href="http://www.google.com" onmouseover="window.alert('I told you not to try to click me!');">
+	Don't Try Clicking Me! 
+</a>
+
+<!-- onmouseout -->
+<a href="http://www.google.com"
+	onmouseout="window.alert('What, you didn\'t like my link?');"> Click Me!
+</a>
+
+</body>
+</html>
+

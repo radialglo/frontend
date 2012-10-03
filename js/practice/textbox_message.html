@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<a href="message.html" id="msg_link"> Get Message </a>
+	<br /><br />
+
+	<form>
+		<input type="text" id="msg_box" />
+
+		<input type="button" value="Go Searching!" id="btn1" /> <br /><br />
+		<input type="button" value ="HTML Help" id="btn2" /><br /><br />
+		<input type="button" value="JavaScripts" id="btn3" />
+	</form>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			var message_text = "Help! I'm in a box!",
+				message_link = document.getElementById("msg_link"),
+				message_box = document.getElementById("msg_box"),
+
+				//buttons
+				b1 = document.getElementById('btn1'),
+				b2 = document.getElementById('btn2'),
+				b3 = document.getElementById('btn3'),
+
+				//web links
+				web_page1 = "http://www.yahoo.com",
+				web_page2 = "http://pageresource.com",
+				web_page3 = "http://www.javascriptcity.com";
+
+
+			message_link.onmouseover /* effectively hover function*/= function() {
+				message_box.value = message_text;
+			}
+
+			message_link.onmouseout = function() {
+				message_box.value = "";
+			}
+
+			b1.onclick = function () {
+				window.location = web_page1;
+			}
+
+			b2.onclick = function() {
+				window.location = web_page2;
+			}
+
+			b3.onclick = function() {
+				window.location = web_page3;
+			}
+
+
+
+		}
+	</script>
+
+</body>
+</html>
