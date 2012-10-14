@@ -6,4 +6,10 @@ After working with jQuery and advanced JavaScript concepts such as **Document Fr
 
 ###### 12-2. JavaScript Clock implemented with **recursion**
 ###### 13-1. Use charAt() to find first letter
+###### 13-2. Use of indexOf() to Test an Address
+###### 14-1  Request a Telephone Number **regex**
+###### 14-2  Build a Select Box Navigation Script
+(Frames present usability and accessibility issues and is considered deprecated in HTML5. Interesting element to experiment with nonetheless)
+###### 15-1. Change Frames
+###### 15-2. Use Variables with frames
 

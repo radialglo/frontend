@@ -1,0 +1,19 @@
+<head>
+	<script type="text/javascript">
+
+		function printInfo() {
+									 //top refers to main window
+			var left = top.left_side;//window.top.left_side ; left frame
+
+			
+
+			document.body.innerHTML = "Hello,<strong> " + left.thename + "!</strong> I know you would really love a <strong>" + left.thecolor + " " + left.thecar + "</strong>, but I currently don't have the funds to get you one."
+		}
+
+		window.onload = printInfo;
+
+	</script>
+</head>
+<body>
+
+</body>

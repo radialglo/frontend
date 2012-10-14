@@ -1,0 +1,38 @@
+<body>
+	Hello, I'm frame 1!
+	<script type="text/javascript">
+		function changeLowerFrames() {
+			top.frames[1].location = "pr15_1_frame4.html";
+			top.frames[2].location = "pr15_1_frame5.html";
+
+			toggleLink();
+		}
+
+		function revert() {
+			top.frames[1].location = "pr15_1_frame2.html";
+			top.frames[2].location = "pr15_1_frame3.html";
+
+			toggleLink();
+		}
+
+		function toggleLink() {
+
+				var link = document.getElementsByTagName('a')[0];
+
+				if(link.href === "javascript:revert();") {
+
+					link.href = "javascript:changeLowerFrames();";
+					link.innerHTML = "Change middle and bottom frames";
+
+				} else {
+
+					link.href = "javascript:revert();";
+					link.innerHTML = "Restore frame 2 and 3";
+				}
+				
+
+		}
+	</script>
+
+	<a href="javascript:changeLowerFrames();">Change middle and bottom frames</a>
+</body>
