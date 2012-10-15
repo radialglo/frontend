@@ -12,4 +12,5 @@ After working with jQuery and advanced JavaScript concepts such as **Document Fr
 (Frames present usability and accessibility issues and is considered deprecated in HTML5. Interesting element to experiment with nonetheless)
 ###### 15-1. Change Frames
 ###### 15-2. Use Variables with frames
+###### 16-2. Using Cookies
 
